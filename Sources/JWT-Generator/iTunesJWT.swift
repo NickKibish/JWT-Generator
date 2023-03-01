@@ -11,7 +11,7 @@ import SwiftJWT
 struct iTunesJWTPayload: Claims {
     var iss: String
     var iat = Date()
-    var exp = Date(timeIntervalSince1970: Date().timeIntervalSince1970 + 10 * 60)
+    var exp = Date(timeIntervalSince1970: Date().timeIntervalSince1970 + 20 * 60 - 1)
     var aud = "appstoreconnect-v1"
 }
 
